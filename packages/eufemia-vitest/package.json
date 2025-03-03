@@ -1,0 +1,25 @@
+{
+  "name": "@dnb/eufemia-vitest",
+  "version": "1.0.0",
+  "description": "Vitest tests for @dnb/eufemia components",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "dependencies": {
+    "@dnb/eufemia": "latest",
+    "@dnb/shared-lib": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^9.3.4",
+    "@testing-library/jest-dom": "6.4.2",
+    "@testing-library/react": "14.2.1",
+    "@vitejs/plugin-react": "4.2.1",
+    "jsdom": "24.0.0",
+    "vitest": "1.3.1"
+  }
+}

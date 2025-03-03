@@ -1,8 +1,9 @@
 import React from 'react'
 import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
-import { Button } from '@dnb/eufemia'
 import { account } from '@dnb/eufemia/icons'
+// import { Button } from '@dnb/eufemia'
+import { Button } from '@dnb/shared-lib'
 
 describe('Button Component', () => {
   it('renders with text content', () => {
