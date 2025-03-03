@@ -1,7 +1,8 @@
 import React from 'react'
+import { describe, it, expect, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { Button } from '@dnb/eufemia'
-import { describe, it, expect, vi } from 'vitest'
+import { account } from '@dnb/eufemia/icons'
 
 describe('Button Component', () => {
   it('renders with text content', () => {
@@ -30,5 +31,15 @@ describe('Button Component', () => {
     expect(screen.getByRole('button')).toBeInTheDocument()
     // The icon is rendered as an SVG element
     expect(document.querySelector('.dnb-icon')).toBeInTheDocument()
+  })
+
+  it('renders with secondary icon', () => {
+    render(<Button text="Button with Icon" icon={account} />)
+    expect(screen.getByRole('button')).toBeInTheDocument()
+    // The icon is rendered as an SVG element
+    expect(document.querySelector('.dnb-icon')).toHaveAttribute(
+      'data-testid',
+      'account icon',
+    )
   })
 })
