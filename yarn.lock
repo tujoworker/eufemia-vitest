@@ -123,7 +123,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dnb/eufemia@npm:^10.14.0, @dnb/eufemia@npm:latest":
+"@dnb/eufemia@npm:latest":
   version: 10.65.1
   resolution: "@dnb/eufemia@npm:10.65.1"
   dependencies:
@@ -153,13 +153,12 @@ __metadata:
 
 "@dnb/shared-lib@file:../shared-lib/package.tgz::locator=%40dnb%2Feufemia-vitest%40workspace%3Apackages%2Feufemia-vitest":
   version: 1.0.0
-  resolution: "@dnb/shared-lib@file:../shared-lib/package.tgz#../shared-lib/package.tgz::hash=95be52&locator=%40dnb%2Feufemia-vitest%40workspace%3Apackages%2Feufemia-vitest"
-  dependencies:
-    "@dnb/eufemia": "npm:^10.14.0"
+  resolution: "@dnb/shared-lib@file:../shared-lib/package.tgz#../shared-lib/package.tgz::hash=5cf2d0&locator=%40dnb%2Feufemia-vitest%40workspace%3Apackages%2Feufemia-vitest"
   peerDependencies:
+    "@dnb/eufemia": ">=10"
     react: ">=18.2.0"
     react-dom: ">=18.2.0"
-  checksum: 10c0/d3f88e206bd541050df02d2d2811eca4c2e3c16e83bb674a67cef1e189f9c21946efa94de3a91b7733310183636243bc08fad84116a5c112331945813c82f8c1
+  checksum: 10c0/9e1025d3acb4ec6026d1e2f1ad6102e384df509f2988784d10255bbef75dd0bbfb8a01fade78fa1a581426096e595855f15020fe4e8bcb2d6b2439f0b66396e1
   languageName: node
   linkType: hard
 
@@ -167,10 +166,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dnb/shared-lib@workspace:packages/shared-lib"
   dependencies:
-    "@dnb/eufemia": "npm:^10.14.0"
+    "@dnb/eufemia": "npm:latest"
     "@types/react": "npm:19.0.10"
     "@types/react-dom": "npm:19.0.4"
   peerDependencies:
+    "@dnb/eufemia": ">=10"
     react: ">=18.2.0"
     react-dom: ">=18.2.0"
   languageName: unknown
