@@ -1,2 +1,1 @@
-export { Button } from './Component.js';
-export { helloWorld } from './helloworld.js';
+export { Button } from './Component.tsx';

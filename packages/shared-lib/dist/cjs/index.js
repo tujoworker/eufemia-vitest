@@ -1,6 +1,4 @@
 Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-const Component = require('./Component.js'),
-  helloworld = require('./helloworld.js');
+const Component = require('./Component.js');
 
 exports.Button = Component.Button;
-exports.helloWorld = helloworld.helloWorld;
