@@ -2,19 +2,18 @@
   "name": "@dnb/shared-lib",
   "version": "1.0.0",
   "type": "module",
-  "main": "./src/cjs/Component.js",
-  "module": "./src/es/Component.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/es/index.js",
   "exports": {
     ".": {
-      "import": "./src/es/Component.js",
-      "require": "./src/cjs/Component.js",
-      "default": "./src/es/Component.js"
+      "import": "./dist/es/index.js",
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/es/index.js"
     },
     "./package.json": "./package.json"
   },
   "files": [
-    "src/cjs",
-    "src/es"
+    "dist"
   ],
   "devDependencies": {
     "@dnb/eufemia": "latest",
