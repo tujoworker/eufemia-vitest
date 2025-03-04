@@ -9,7 +9,7 @@
     "test:watch": "vitest watch"
   },
   "dependencies": {
-    "@dnb/eufemia": "10.50.0",
+    "@dnb/eufemia": "latest",
     "@dnb/shared-lib": "../shared-lib/package.tgz",
     "react": "18.2.0",
     "react-dom": "18.2.0"
