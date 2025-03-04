@@ -6,7 +6,7 @@
     "packages/*"
   ],
   "scripts": {
-    "test": "yarn workspace @dnb/eufemia-vitest test",
+    "test": "yarn workspace @dnb/shared-lib build && yarn && yarn workspace @dnb/eufemia-vitest test",
     "test:watch": "yarn workspace @dnb/eufemia-vitest test:watch"
   }
 }
