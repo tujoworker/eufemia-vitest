@@ -2,7 +2,20 @@
   "name": "@dnb/shared-lib",
   "version": "1.0.0",
   "type": "module",
-  "main": "src/Component.tsx",
+  "main": "./src/cjs/Component.js",
+  "module": "./src/es/Component.js",
+  "exports": {
+    ".": {
+      "import": "./src/es/Component.js",
+      "require": "./src/cjs/Component.js",
+      "default": "./src/es/Component.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/cjs",
+    "src/es"
+  ],
   "devDependencies": {
     "@dnb/eufemia": "latest",
     "@types/react": "19.0.10",
